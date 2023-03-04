@@ -855,6 +855,7 @@ a {
   width: 40px;
 }
 .container__contacts .contacts__title .contacts__mail {
+  align-items: stretch;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -952,6 +953,11 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.container__contacts .contacts__message .contacts__send .contacts__attach {
+  display: flex;
+  align-items: center;
+}
+
 .footer__nets {
   display: flex;
   flex-direction: column;
