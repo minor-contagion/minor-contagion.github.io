@@ -171,7 +171,6 @@ a {
 
 .container__hero {
   display: flex;
-  gap: 142px;
   padding: 7vh 0 18vh 0;
 }
 .container__hero .hero__info .hero__info-text {
@@ -357,6 +356,7 @@ a {
   visibility: visible;
 }
 .container__hero .hero__photo :first-child {
+  height: auto;
   position: absolute;
   top: 45px;
   right: 222px;
@@ -415,7 +415,7 @@ a {
 .container__hero .hero__photo img:nth-child(12) {
   position: absolute;
   top: 10px;
-  left: 546px;
+  right: 75px;
   z-index: -2;
 }
 
@@ -1020,11 +1020,39 @@ a {
   .container .footer__icons {
     padding-bottom: 3vh;
   }
+  .container .hero__photo :first-child {
+    right: 40px;
+    top: 70px;
+    width: 440px;
+  }
+  .container .hero__photo img:nth-child(2),
+  .container .hero__photo img:nth-child(3),
+  .container .hero__photo img:nth-child(4),
+  .container .hero__photo img:nth-child(5),
+  .container .hero__photo img:nth-child(6),
+  .container .hero__photo img:nth-child(7),
+  .container .hero__photo img:nth-child(8),
+  .container .hero__photo img:nth-child(9),
+  .container .hero__photo img:nth-child(10),
+  .container .hero__photo img:nth-child(11) {
+    display: none;
+  }
+  .container .hero__photo img:nth-child(12) {
+    right: 10px;
+    top: 70px;
+    width: 652px;
+  }
+  .container .nav {
+    margin-top: -10vh;
+  }
 }
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
     padding: 45px 10px;
+  }
+  .container .nav {
+    margin-top: -10vh;
   }
   .container .test__left,
   .container .test__right {
@@ -1039,11 +1067,24 @@ a {
     display: flex;
     flex-wrap: wrap;
   }
+  .container .hero__photo :first-child {
+    right: 75px;
+    top: 110px;
+    width: 320px;
+  }
+  .container .hero__photo img:nth-child(12) {
+    right: 0;
+    top: 110px;
+    width: 532px;
+  }
 }
 @media (max-width: 767px) {
   .container {
     max-width: none;
     padding: 55px 20px;
+  }
+  .container .nav {
+    margin-top: -12.5vh;
   }
   .container .nav__links a {
     display: none;
@@ -1056,8 +1097,19 @@ a {
     text-align: center;
     align-items: center;
   }
-  .container .hero__photo img {
-    top: 140px;
-    right: 500px;
+  .container .hero__photo :first-child {
+    right: 75px;
+    top: 35px;
+    width: 250px;
+  }
+  .container .hero__photo img:nth-child(12) {
+    display: none;
+  }
+}
+@media (max-width: 460px) {
+  .container .hero__photo :first-child {
+    right: 25px;
+    top: 40px;
+    width: 225px;
   }
 }/*# sourceMappingURL=style.css.map */
