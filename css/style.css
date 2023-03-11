@@ -7,17 +7,17 @@
   box-sizing: border-box;
 }
 
-.container__contacts .contacts__title, .blog__cards .blog__title, .container__testimonials .testimonials__title, .container__clients .clients__title, .portfolio .container__portfolio .portfolio__title .portfolio__title-left, .container__services .services__title {
+.container__contacts .contacts__title, .blog__cards .blog__title, .container__testimonials .testimonials__title, .container__clients .clients__title, .container__portfolio .portfolio__title .portfolio__title-left, .container__services .services__title {
   display: flex;
   flex-direction: column;
 }
-.container__contacts .contacts__title :first-child, .blog__cards .blog__title :first-child, .container__testimonials .testimonials__title :first-child, .container__clients .clients__title :first-child, .portfolio .container__portfolio .portfolio__title .portfolio__title-left :first-child, .container__services .services__title :first-child {
+.container__contacts .contacts__title :first-child, .blog__cards .blog__title :first-child, .container__testimonials .testimonials__title :first-child, .container__clients .clients__title :first-child, .container__portfolio .portfolio__title .portfolio__title-left :first-child, .container__services .services__title :first-child {
   padding-bottom: 10px;
 }
-.container__contacts .contacts__title :nth-child(2), .blog__cards .blog__title :nth-child(2), .container__testimonials .testimonials__title :nth-child(2), .container__clients .clients__title :nth-child(2), .portfolio .container__portfolio .portfolio__title .portfolio__title-left :nth-child(2), .container__services .services__title :nth-child(2) {
+.container__contacts .contacts__title :nth-child(2), .blog__cards .blog__title :nth-child(2), .container__testimonials .testimonials__title :nth-child(2), .container__clients .clients__title :nth-child(2), .container__portfolio .portfolio__title .portfolio__title-left :nth-child(2), .container__services .services__title :nth-child(2) {
   padding-bottom: 15px;
 }
-.container__contacts .contacts__title .nav__title, .blog__cards .blog__title .nav__title, .container__testimonials .testimonials__title .nav__title, .container__clients .clients__title .nav__title, .portfolio .container__portfolio .portfolio__title .portfolio__title-left .nav__title, .container__services .services__title .nav__title {
+.container__contacts .contacts__title .nav__title, .blog__cards .blog__title .nav__title, .container__testimonials .testimonials__title .nav__title, .container__clients .clients__title .nav__title, .container__portfolio .portfolio__title .portfolio__title-left .nav__title, .container__services .services__title .nav__title {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
@@ -25,16 +25,16 @@
   color: #8643dc;
 }
 @media (max-width: 767px) {
-  .container__contacts .contacts__title .nav__title, .blog__cards .blog__title .nav__title, .container__testimonials .testimonials__title .nav__title, .container__clients .clients__title .nav__title, .portfolio .container__portfolio .portfolio__title .portfolio__title-left .nav__title, .container__services .services__title .nav__title {
+  .container__contacts .contacts__title .nav__title, .blog__cards .blog__title .nav__title, .container__testimonials .testimonials__title .nav__title, .container__clients .clients__title .nav__title, .container__portfolio .portfolio__title .portfolio__title-left .nav__title, .container__services .services__title .nav__title {
     font-size: calc(14px + 6.8 * ((100vw - 320px) / 1140));
   }
 }
 @media (min-width: 767px) {
-  .container__contacts .contacts__title .nav__title, .blog__cards .blog__title .nav__title, .container__testimonials .testimonials__title .nav__title, .container__clients .clients__title .nav__title, .portfolio .container__portfolio .portfolio__title .portfolio__title-left .nav__title, .container__services .services__title .nav__title {
+  .container__contacts .contacts__title .nav__title, .blog__cards .blog__title .nav__title, .container__testimonials .testimonials__title .nav__title, .container__clients .clients__title .nav__title, .container__portfolio .portfolio__title .portfolio__title-left .nav__title, .container__services .services__title .nav__title {
     font-size: calc(14px + 4 * ((100vw) / 1140));
   }
 }
-.container__contacts .contacts__title .nav__subtitle, .blog__cards .blog__title .nav__subtitle, .container__testimonials .testimonials__title .nav__subtitle, .container__clients .clients__title .nav__subtitle, .portfolio .container__portfolio .portfolio__title .portfolio__title-left .nav__subtitle, .container__services .services__title .nav__subtitle {
+.container__contacts .contacts__title .nav__subtitle, .blog__cards .blog__title .nav__subtitle, .container__testimonials .testimonials__title .nav__subtitle, .container__clients .clients__title .nav__subtitle, .container__portfolio .portfolio__title .portfolio__title-left .nav__subtitle, .container__services .services__title .nav__subtitle {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 700;
@@ -42,12 +42,12 @@
   color: #25202f;
 }
 @media (max-width: 767px) {
-  .container__contacts .contacts__title .nav__subtitle, .blog__cards .blog__title .nav__subtitle, .container__testimonials .testimonials__title .nav__subtitle, .container__clients .clients__title .nav__subtitle, .portfolio .container__portfolio .portfolio__title .portfolio__title-left .nav__subtitle, .container__services .services__title .nav__subtitle {
+  .container__contacts .contacts__title .nav__subtitle, .blog__cards .blog__title .nav__subtitle, .container__testimonials .testimonials__title .nav__subtitle, .container__clients .clients__title .nav__subtitle, .container__portfolio .portfolio__title .portfolio__title-left .nav__subtitle, .container__services .services__title .nav__subtitle {
     font-size: calc(25px + 15.3 * ((100vw - 320px) / 1140));
   }
 }
 @media (min-width: 767px) {
-  .container__contacts .contacts__title .nav__subtitle, .blog__cards .blog__title .nav__subtitle, .container__testimonials .testimonials__title .nav__subtitle, .container__clients .clients__title .nav__subtitle, .portfolio .container__portfolio .portfolio__title .portfolio__title-left .nav__subtitle, .container__services .services__title .nav__subtitle {
+  .container__contacts .contacts__title .nav__subtitle, .blog__cards .blog__title .nav__subtitle, .container__testimonials .testimonials__title .nav__subtitle, .container__clients .clients__title .nav__subtitle, .container__portfolio .portfolio__title .portfolio__title-left .nav__subtitle, .container__services .services__title .nav__subtitle {
     font-size: calc(25px + 9 * ((100vw) / 1140));
   }
 }
@@ -171,6 +171,7 @@ a {
 
 .container__hero {
   display: flex;
+  position: relative;
   padding: 7vh 0 18vh 0;
 }
 .container__hero .hero__info .hero__info-text {
@@ -358,64 +359,64 @@ a {
 .container__hero .hero__photo :first-child {
   height: auto;
   position: absolute;
-  top: 45px;
-  right: 222px;
+  right: 0;
+  top: -135px;
   z-index: -1;
 }
 .container__hero .hero__photo img:nth-child(2) {
   position: absolute;
-  top: 263px;
-  left: 1300px;
+  top: 90px;
+  right: -15px;
 }
 .container__hero .hero__photo img:nth-child(3) {
   position: absolute;
-  left: 74.1%;
-  top: 3%;
+  right: 550px;
+  top: 0;
 }
 .container__hero .hero__photo img:nth-child(4) {
   position: absolute;
-  top: 174px;
-  left: 750px;
+  top: -150px;
+  right: 150px;
 }
 .container__hero .hero__photo img:nth-child(5) {
   position: absolute;
-  top: 715px;
-  left: 856px;
+  top: 575px;
+  right: 400px;
 }
 .container__hero .hero__photo img:nth-child(6) {
   position: absolute;
-  top: 465px;
-  left: 1270px;
+  top: 20px;
+  right: 10px;
 }
 .container__hero .hero__photo img:nth-child(7) {
   position: absolute;
-  top: 512px;
-  left: 715px;
+  top: 275px;
+  right: -35px;
 }
 .container__hero .hero__photo img:nth-child(8) {
   position: absolute;
-  top: 196px;
-  left: 1220px;
+  top: 325px;
+  right: 525px;
 }
 .container__hero .hero__photo img:nth-child(9) {
   position: absolute;
-  top: 625px;
-  left: 1350px;
+  top: 475px;
+  right: -75px;
 }
 .container__hero .hero__photo img:nth-child(10) {
   position: absolute;
-  top: 315px;
-  left: 1440px;
+  top: 130px;
+  right: -125px;
 }
 .container__hero .hero__photo img:nth-child(11) {
   position: absolute;
-  top: 192px;
-  left: 1365px;
+  top: 10px;
+  right: -155px;
 }
 .container__hero .hero__photo img:nth-child(12) {
   position: absolute;
-  top: 10px;
-  right: 75px;
+  top: -150px;
+  right: -125px;
   z-index: -2;
 }
 
@@ -478,26 +479,26 @@ a {
   max-width: 100%;
 }
 
-.portfolio .container__portfolio {
+.container__portfolio {
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding: 11.5vh 0;
 }
-.portfolio .container__portfolio .portfolio__title {
+.container__portfolio .portfolio__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.portfolio .container__portfolio .portfolio__title .portfolio__title-left img {
+.container__portfolio .portfolio__title .portfolio__title-left img {
   width: 50px;
 }
-.portfolio .container__portfolio .portfolio__title .portfolio__title-right {
+.container__portfolio .portfolio__title .portfolio__title-right {
   display: flex;
   gap: 13px;
   align-items: center;
 }
-.portfolio .container__portfolio .portfolio__title .portfolio__title-right span {
+.container__portfolio .portfolio__title .portfolio__title-right span {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 500;
@@ -508,21 +509,21 @@ a {
   color: #25202f;
 }
 @media (max-width: 767px) {
-  .portfolio .container__portfolio .portfolio__title .portfolio__title-right span {
+  .container__portfolio .portfolio__title .portfolio__title-right span {
     font-size: calc(19px + 8.5 * ((100vw - 320px) / 1140));
   }
 }
 @media (min-width: 767px) {
-  .portfolio .container__portfolio .portfolio__title .portfolio__title-right span {
+  .container__portfolio .portfolio__title .portfolio__title-right span {
     font-size: calc(19px + 5 * ((100vw) / 1140));
   }
 }
-.portfolio .container__portfolio .portfolio__cards {
+.container__portfolio .portfolio__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio .container__portfolio .portfolio__cards img {
+.container__portfolio .portfolio__cards img {
   max-width: 540px;
   min-width: 340px;
   height: auto;
@@ -806,7 +807,7 @@ a {
   padding-bottom: 20px;
 }
 .blog__cards .blog__card-2 {
-  max-width: 250px;
+  max-width: 350px;
   min-width: 150px;
   height: auto;
   display: grid;
@@ -826,7 +827,7 @@ a {
   color: #fff;
 }
 .blog__cards .blog__card-3 {
-  max-width: 250px;
+  max-width: 350px;
   min-width: 150px;
   height: auto;
   position: relative;
@@ -1008,7 +1009,7 @@ a {
 @media (max-width: 1140px) {
   .container {
     max-width: 970px;
-    padding: 50px 5px;
+    padding: 50px 25px;
   }
   .container .portfolio__cards {
     align-items: center;
@@ -1022,7 +1023,7 @@ a {
   }
   .container .hero__photo :first-child {
     right: 40px;
-    top: 70px;
+    top: -150px;
     width: 440px;
   }
   .container .hero__photo img:nth-child(2),
@@ -1038,8 +1039,8 @@ a {
     display: none;
   }
   .container .hero__photo img:nth-child(12) {
-    right: 10px;
-    top: 70px;
+    right: 25px;
+    top: -70px;
     width: 652px;
   }
   .container .nav {
@@ -1049,7 +1050,7 @@ a {
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
-    padding: 45px 10px;
+    padding: 95px 40px;
   }
   .container .nav {
     margin-top: -10vh;
@@ -1068,13 +1069,13 @@ a {
     flex-wrap: wrap;
   }
   .container .hero__photo :first-child {
-    right: 75px;
-    top: 110px;
+    right: -15px;
+    top: -110px;
     width: 320px;
   }
   .container .hero__photo img:nth-child(12) {
-    right: 0;
-    top: 110px;
+    right: -75px;
+    top: -110px;
     width: 532px;
   }
 }
@@ -1099,17 +1100,23 @@ a {
   }
   .container .hero__photo :first-child {
     right: 75px;
-    top: 35px;
+    top: -175px;
     width: 250px;
   }
   .container .hero__photo img:nth-child(12) {
     display: none;
   }
 }
+@media (max-width: 530px) {
+  .container .blog__card-2 img, .container .blog__card-3 img {
+    width: 400px;
+    height: 250px;
+  }
+}
 @media (max-width: 460px) {
   .container .hero__photo :first-child {
     right: 25px;
-    top: 40px;
+    top: -160px;
     width: 225px;
   }
 }/*# sourceMappingURL=style.css.map */
