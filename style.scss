@@ -118,34 +118,6 @@ a {
                 }
             }
         }
-        .burger {
-            --offset-horziontal: 23.5px;
-            --offset-vertical: 30.2px;
-            position: relative;
-            padding: var(--offset-vertical) var(--offset);
-            width: 70px;
-            height: 70px;
-            border-radius: 100%;
-            background-color: #fff;
-            box-shadow: 0px 20px 50px rgba(198, 185, 233, 0.3);
-            .burger__line {
-                position: absolute;
-                top: var(--offset-vertical);
-                left: 50%;
-                display: inline-block;
-                width: calc(100% - (var(--offset-horziontal) * 2));
-                height: 2px;
-                background-color: #25202f;
-                transform: translateX(-50%);
-                border-radius: 11%;
-            }
-            .burger__line:nth-child(2) {
-                top: calc(var(--offset-vertical) + 5.5px);
-            }
-            .burger__line:nth-child(3) {
-                top: calc(var(--offset-vertical) + 11px);
-            }
-        }
     }
 }
 
