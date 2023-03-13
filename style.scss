@@ -87,6 +87,39 @@ a {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
+    background-color: #000;
+}
+
+.header {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7vh 0;
+        .nav__left {
+            display: flex;
+            .logo {
+                padding-right: 100px;
+            }
+            .nav__links {
+                align-items: center;
+                display: flex;
+                gap: 35px;
+                a {
+                    font-family: "Red Hat Display";
+                    font-style: normal;
+                    font-weight: 500;
+                    @include adaptiv-font(20, 18);
+                    line-height: 26px;
+                    color: #7e7f86;
+                    transition: 0.3s;
+                }
+                a:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
 }
 
 .container__hero {

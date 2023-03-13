@@ -100,6 +100,46 @@ a {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+  background-color: #000;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7vh 0;
+}
+.header .nav .nav__left {
+  display: flex;
+}
+.header .nav .nav__left .logo {
+  padding-right: 100px;
+}
+.header .nav .nav__left .nav__links {
+  align-items: center;
+  display: flex;
+  gap: 35px;
+}
+.header .nav .nav__left .nav__links a {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  color: #7e7f86;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  .header .nav .nav__left .nav__links a {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1140));
+  }
+}
+@media (min-width: 767px) {
+  .header .nav .nav__left .nav__links a {
+    font-size: calc(18px + 2 * ((100vw) / 1140));
+  }
+}
+.header .nav .nav__left .nav__links a:hover {
+  color: #000;
 }
 
 .container__hero {
